@@ -1,0 +1,78 @@
+.skill-wrap {
+  width: 100%;
+  height: 916px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+#box1 {
+  position: relative;
+  animation: fadeInDown 2s;
+}
+#box2 {
+  position: relative;
+  animation: fadeInDown 5s;
+}
+#box3 {
+  position: relative;
+  animation: fadeInDown 8s;
+}
+#box4 {
+  position: relative;
+  animation: fadeInDown 11s;
+}
+#box5 {
+  position: relative;
+  animation: fadeInDown 14s;
+}
+.skill-box {
+  background-color: white;
+  width: 15%;
+  height: 360px;
+  border-radius: 40px;
+  box-shadow: 1px 2px 25px 7px #8080806e;
+}
+.skill-box:hover {
+  transform: translateY(20px);
+  transition-duration: 1s;
+}
+.skill-box > span > h1 {
+  padding-left: 28px;
+  font-size: 32px;
+  margin: 0;
+  color: chocolate;
+}
+.skill-box > hr {
+  width: 81%;
+}
+.frontimage {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.frontimage2 {
+  width: 100%;
+  padding-top: 50px;
+}
+@media (max-width: 600px) and (max-height: 1200px) {
+  .skill-wrap {
+    display: inline-table;
+    padding-left: 20vw;
+    padding-top: 3vh;
+  }
+  .skill-box {
+    width: 26vh;
+  }
+  .skill-box > span > h1 {
+    font-size: 1em;
+  }
+}

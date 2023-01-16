@@ -1,0 +1,32 @@
+.contact-wrap {
+  width: 100%;
+  height: 917px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-box {
+  width: 12%;
+  height: 32%;
+}
+#logo {
+  width: 12%;
+  height: 20px;
+  padding-right: 7px;
+}
+#contact-box1 {
+  padding-left: 24px;
+}
+#contact-box3 {
+  padding-top: 20px;
+}
+@media (max-width: 600px) and (max-height: 1200px) {
+  .contact-wrap {
+    width: 100vw;
+  }
+  .contact-box {
+    width: 100vw;
+    height: 73vh;
+    padding-left: 24vw;
+  }
+}
